@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import TextField from 'material-ui/TextField';
 import Button from 'material-ui/Button';
 
+import GraphImage from '../../assets/images/graph.PNG';
+
 class TreeSearchView extends Component {
   state = {
     search: '',
@@ -86,6 +88,10 @@ class TreeSearchView extends Component {
   render() {
     return (
       <div>
+        <div>
+          <h2>Current Nodes</h2>
+          <img src={GraphImage} alt='graph image'/>
+        </div>
         <TextField id="search"
                    label="search"
                    value={this.state.search}
